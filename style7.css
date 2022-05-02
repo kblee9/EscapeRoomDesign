@@ -1,0 +1,133 @@
+.Title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  height: auto;
+  animation: glowimg 6s infinite;
+}
+.maze {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+.symbol ,.icarus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
+.glyphs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body{
+  border: 10px double #000000;
+  padding: 45px;
+  margin: 50px;
+  background-color:#706358;
+  text-align: center;
+}
+
+hr{
+  height: 1.5px;
+  background-color: black;
+  border: none;
+}
+
+h1 {
+  text-align:center;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 35px;
+  color: #e6be7d;
+  animation: glowh2 8s infinite;
+}
+p{
+  font-size: 20px;
+}
+
+div {
+  text-align: center;
+  font-size: 60px;
+  
+}
+
+a:link {
+  font-family: 'IM Fell English SC', serif;
+  color:#e6be7d;
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow:
+    1px 1px 5px #9d6a1d,
+    1px 1px 25px #9d6a1d;
+}
+
+a:visited {
+  color:#e6be7d;
+}
+
+a:hover {
+  color:#e6be7d;
+  text-shadow:
+    1px 1px 5px #9d6a1d,
+    1px 1px 25px #9d6a1d;
+}
+
+a:active {
+  color:#000000;
+  text-shadow:
+    0 0 0 #000;
+}
+nav {
+  text-align:center;
+  border:6px double #000000;
+  padding: 15px;
+  margin: 25px 100px;
+  font-size: 20px;
+}
+
+/* og bg color #8a7661
+maze color: #363029
+stone colors: #706358 (potential bg) #9d938a (light stone) 
+#857a6f (medium stone) 
+#574d43 (dark stone) 
+gold color: #9d6a1d
+lighter gold: #d4b66d
+color matched 'mission': #e6be7d
+*/
+
+
+@keyframes glowimg {
+  0% {box-shadow:
+    0 0 10px #e6be7d,
+    0 0 20px #cda040,
+    0 0 40px #9d6a1d;}
+  50%  {box-shadow:
+    0 0 20px #e6be7d,
+    0 0 40px #cda040,
+    0 0 80px #9d6a1d;}
+  100% {box-shadow:
+    0 0 10px #e6be7d,
+    0 0 20px #cda040,
+    0 0 40px #9d6a1d;}
+}
+
+@keyframes glowh2 {
+  0% {text-shadow:
+    1px 1px 8px #9d6a1d,
+    1px 1px 25px #9d6a1d;}
+  50% {text-shadow:
+    1px 1px 15px #9d6a1d,
+    1px 1px 50px #9d6a1d;}
+  100% {text-shadow:
+    1px 1px 8px #9d6a1d,
+    1px 1px 25px #9d6a1d;}
+}
