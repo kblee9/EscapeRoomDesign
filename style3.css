@@ -1,0 +1,80 @@
+body{
+  border: 10px double #000000;
+  padding: 45px;
+  margin: 50px;
+  background-color:#706358;
+  text-align: center;
+}
+hr{
+  height: 1.5px;
+  background-color: black;
+  border: none;
+}
+h1, h2 {
+  text-align:center;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 60px;
+  color: #e6be7d;
+  animation: glowTitle 8s infinite;
+}
+@keyframes glowTitle {
+  0% {text-shadow:
+    1px 1px 8px #9d6a1d,
+    1px 1px 25px #9d6a1d;}
+  50% {text-shadow:
+    1px 1px 15px #9d6a1d,
+    1px 1px 50px #9d6a1d;}
+  100% {text-shadow:
+    1px 1px 8px #9d6a1d,
+    1px 1px 25px #9d6a1d;}
+}
+.coin, .disc, .ring {
+  width: 150%;
+  margin-left: -55px;
+  cursor: pointer;
+}
+
+div {
+  display: inline-block;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #706358;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 10px double black;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The X Button */
+.closeCoin, .closeDisc {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeCoin:hover,
+.closeCoin:focus,
+.closeDisc:hover,
+.closeDisc:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,71 @@
+body{
+  border: 10px double #000000;
+  padding: 45px;
+  margin: 50px;
+  background-color:#706358;
+  text-align: center;
+}
+hr{
+  height: 1.5px;
+  background-color: black;
+  border: none;
+}
+h1 {
+  text-align:center;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 60px;
+  color: #e6be7d;
+  animation: glowTitle 8s infinite;
+}
+@keyframes glowTitle {
+  0% {text-shadow:
+    1px 1px 8px #9d6a1d,
+    1px 1px 25px #9d6a1d;}
+  50% {text-shadow:
+    1px 1px 15px #9d6a1d,
+    1px 1px 50px #9d6a1d;}
+  100% {text-shadow:
+    1px 1px 8px #9d6a1d,
+    1px 1px 25px #9d6a1d;}
+}
+.symbol {
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* stone css start */
+
+input[type=checkbox], input[type=button] {
+  display:none;
+}
+ 
+input[type=checkbox] + label, input[type=button] + label
+{
+  background-image: url("https://kblee9.github.io/EscapeRoomDesign/Images/stone.png");
+  height: 100px;
+  width: 100px;
+  display:inline-block;
+  padding: 0 0 0 0px;
+}
+input[type=checkbox]:checked + label, input[type=button]:active + label 
+{
+  background-image: url("https://kblee9.github.io/EscapeRoomDesign/Images/stonePressed.png");
+  height: 100px;
+  width: 100px;
+  display:inline-block;
+  padding: 0 0 0 0px;
+}
+
+/* stone css end */
+
+div {
+  width: 600px;
+  margin: auto;
+}
+
+div.hint {
+  background-color: #9d938a;
+  border: 5px double black
+}
